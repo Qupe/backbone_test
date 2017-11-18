@@ -1,0 +1,62 @@
+.resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    &__item {
+        background: #333333;
+        height: 8px;
+        width: 8px;
+        position: absolute;
+
+        &[data-direction = 'rt'] {
+            top: -8px;
+            right: -8px;
+            cursor: nesw-resize;
+        }
+
+        &[data-direction = 'lt'] {
+            top: -8px;
+            left: -8px;
+            cursor: nwse-resize;
+        }
+
+        &[data-direction = 'lb'] {
+            bottom: -8px;
+            left: -8px;
+            cursor: nesw-resize;
+        }
+
+        &[data-direction = 'rb'] {
+            bottom: -8px;
+            right: -8px;
+            cursor: nwse-resize;
+        }
+
+        &[data-direction = 't'] {
+            top: -8px;
+            left: calc(50% - 4px);
+            cursor: n-resize;
+        }
+
+        &[data-direction = 'l'] {
+            top: calc(50% - 4px);
+            left: -8px;
+            cursor: w-resize;
+        }
+
+        &[data-direction = 'r'] {
+            top: calc(50% - 4px);
+            right: -8px;
+            cursor: e-resize;
+        }
+
+        &[data-direction = 'b'] {
+            bottom: -8px;
+            left: calc(50% - 4px);
+            cursor: s-resize;
+        }
+    }
+}

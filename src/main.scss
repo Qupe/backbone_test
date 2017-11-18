@@ -1,0 +1,10 @@
+@import "~normalize.css";
+
+html, body, #app {
+    height: 100%;
+}
+
+@import "./components/workarea/workarea";
+@import "./components/toolbar/toolbar";
+@import "./components/resizer/resizer";
+@import "./components/picture/picture";

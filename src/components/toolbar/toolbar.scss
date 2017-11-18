@@ -1,0 +1,23 @@
+.toolbar {
+    padding: 10px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+}
+
+.toolbar__button {
+    border: none;
+    background: #4b93cc;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: Arial, SansSerif;
+    outline: none;
+
+    &-input {
+        display: none;
+    }
+}
