@@ -19,7 +19,7 @@ function addHash(template, hash) {
 module.exports = {
     entry: ['./src/main.js'],
     output: {
-        path: __dirname + '/dist/static/',
+        path: __dirname + '/docs/static/',
         publicPath: 'static/',
         filename: addHash('[name].js', '[chunkhash]')
     },
